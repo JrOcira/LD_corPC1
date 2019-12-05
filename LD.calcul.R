@@ -4,9 +4,9 @@
   
 ## R
 PATH.data = paste0(getwd(),"/data")
-PATH.script = paste0(getwd(),"/scripts")
-source(paste0(PATH.script,'/cor.test.matrix.r'))
-source(paste0(PATH.script,'/cone.proj.invsqrt.r'))
+PATH = paste0(getwd(),"/")
+source(paste0(PATH,'/cor.test.matrix.r'))
+source(paste0(PATH,'/cone.proj.invsqrt.r'))
 
 geneA =read.csv(paste0(PATH.data,"/example.gene.1.txt"), header=T, row.names=1, sep=',')
 geneB =read.csv(paste0(PATH.data,"/example.gene.2.txt"), header=T, row.names=1, sep=',')
