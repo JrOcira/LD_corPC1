@@ -17,9 +17,20 @@ kinship.inv = cone.proj.sdp.invsqrt(kinship)
 
 
 ## Calcul PCA
-
+LD.calcul.corPC1 <- function(geneA,geneB,kinship.inv) {
+  
+  LD_corPC1 = as.numeric(0)
+  LD_corPC1.pval = as.numeric(0)
+  LD_corPC1v = as.numeric(0)
+  LD_corPC1.vpval = as.numeric(0)
+  PC1.gene.A = NA
+  PC1.gene.A.cor = NA
+  PC1.gene.B = NA
+  PC1.gene.B.cor = NA
+  result = NA
+  
+  ## Calcul PCA
 if (nrow(geneA) != 0) {
-  # calcul PCA
   geneA.transpo <- t(geneA)
   #PC1 and PC1 % kinship.inv
   acp.A <- prcomp(geneA.transpo ,scale=FALSE)
@@ -28,7 +39,6 @@ if (nrow(geneA) != 0) {
 }
 
 if (nrow(geneB) != 0) {
-  # calcul PCA
   geneB.transpo <- t(geneB)
   #PC1 and PC1 % kinship.inv
   acp.B <- prcomp(geneB.transpo ,scale=FALSE)
@@ -46,4 +56,6 @@ LD_corPC1v = cor(PC1.gene.A.cor,PC1.gene.B.cor)
 LD_corPC1v.pval = cor.test.p2(PC1.gene.A.cor,PC1.gene.B.cor)
 
 result = c(LD_corPC1,LD_corPC1.pval,LD_corPC1v,LD_corPC1v.pval)
+names(result) = c("LD_corPC1","LD_corPC1.pval","LD_corPC1v","LD_corPC1v.pval")
 result
+}
