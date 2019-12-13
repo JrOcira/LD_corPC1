@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1575556426226.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "950250393",
+    "id" : "D915E6CC",
+    "lastKnownWriteTime" : 1575623612,
+    "last_content_update" : 1575623612457,
+    "path" : "~/LD_corPC1/calcul.PC1.PC1v.r",
+    "project_path" : "calcul.PC1.PC1v.r",
+    "properties" : {
+        "cursorPosition" : "0,25",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
