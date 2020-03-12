@@ -4,7 +4,7 @@
   
 ## R
 PATH.data = paste0(getwd(),"/data")
-PATH = paste0(getwd(),"/")
+PATH = paste0(getwd(),"")
 source(paste0(PATH,'/cor.test.matrix.r'))
 source(paste0(PATH,'/cone.proj.invsqrt.r'))
 source(paste0(PATH,'/calcul.PC1.PC1v.r'))
