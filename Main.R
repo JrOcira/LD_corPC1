@@ -10,7 +10,7 @@ source(paste0(PATH,'/cone.proj.invsqrt.r'))
 source(paste0(PATH,'/calcul.PC1.PC1v.r'))
 source(paste0(PATH,'/LD.corPC1.corPC1v.r'))
 source(paste0(PATH,'/GWESS.manhattant.plot.r'))
-
+library(dplyr)
 ####################################EXAMPLE 1####################################
 ## SNP in line and id in columns 
 geneA =read.csv(paste0(PATH.data,"/example.gene.1.txt"), header=T, row.names=1, sep=',')
