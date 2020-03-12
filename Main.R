@@ -37,9 +37,9 @@ result = LD.corPC1.corPC1v (PC1.A,data.frame.PC1,PC1.Av,data.frame.PC1v)
 result
 
 ####################################EXAMPLE 2####################################
-PC1.data = get(load(paste0(PATH,"/PC1_data.RData")))
-PC1v.data = get(load(paste0(PATH,"/PC1v_data.RData")))
-list.genes = read.csv(paste0(PATH,"/list.genes.txt"), header=T, sep=',')
+PC1.data = get(load(paste0(PATH.data,"/PC1_data.RData")))
+PC1v.data = get(load(paste0(PATH.data,"/PC1v_data.RData")))
+list.genes = read.csv(paste0(PATH.data,"/list.genes.txt"), header=T, sep=',')
 ##choose one bait gene
 bait.MtSUNN = as.data.frame(PC1.data[which(rownames(PC1.data) == "Medtr4g070970"),])
 bait.MtSUNNv = as.data.frame(PC1v.data[which(rownames(PC1v.data) == "Medtr4g070970"),])
